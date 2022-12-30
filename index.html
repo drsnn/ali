@@ -1,9 +1,18 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+</head>
 <body>
-
-<h1>Ali nin gunlugu</h1>
-<p>Babami cok seviyorum.</p>
-
+    <div id="search">
+        <form id="searchbar" action="https://google.com/search" autocomplete="off" oninput="suggest()">
+            <input id="searchInput" type="search" spellcheck="false" name="q">
+        </form>
+        <div id="suggestions"></div>
+    </div>
 </body>
-</html> 
+<script src="suggestions.js"></script>
+</html>
