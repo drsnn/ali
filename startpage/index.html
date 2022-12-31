@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" , user-scalable=no">
-  <title>Home</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-  <header>
-    <div class="clock-greeting">
-      <h1>Hello Sourajyoti</h1>
-      <br>
-      <h2 id="time-greeting"></h2>
-      <h2 id="clock"></h2>
-    </div>
-    <div class="weather">
-      <div id="description"></div>
-      <h1 id="temp"></h1>
-      <div id="location"></div>
-    </div>
-    <div class="weathericon"><img src="" width="104px" height="104px" id="wicon"></div>
-  </header>
-  <div class="container">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Roboto+Mono:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <time id="js-clock"></time>
+      <span id="js-date" class="date"></span>
+    </header>
+    <div class="wrapper">
+      <section class="main">
+       
+     <div class="container">
     <div class="head">
       <div class="logo"><img src="icons/fox.svg" /></div>
       <div class="search-bar">
@@ -43,67 +38,138 @@
         <div id="suggestions"></div>
       </div>
     </div>
-
-    <div class="bookmark">
-      <div class="category">
-        <div class="icon"><img src="icons/code.svg" /></div>
-        <div class="bookmarks cod">
-          <li><a class="bm" href="https://www.hackerrank.com/dashboard">Hackerrank</a></li>
-          <li><a class="bm" href="https://leetcode.com/problemset/algorithms/">LeetCode</a></li>
-          <li><a class="bm" href="https://stackoverflow.com/">Stackoverflow</a></li>
-          <li><a class="bm" href="https://www.onlinegdb.com/">OnlineGDB</a></li>
-          <li><a class="bm" href="https://github.com/sourajyotii">Github</a></li>
-        </div>
-      </div>
-
-      <div class="category">
-        <div class="icon"><img src="icons/gcat.svg" /></div>
-        <div class="bookmarks gog">
-          <li><a class="bm" href="https://www.youtube.com/">Youtube</a></li>
-          <li><a class="bm" href="https://mail.google.com/mail/u/0/#inbox">Mail</a></li>
-          <li><a class="bm" href="https://drive.google.com/drive/u/0/my-drive">Drive</a></li>
-          <li><a class="bm" href="https://classroom.google.com/u/0/h">Classroom</a></li>
-          <li><a class="bm" href="https://meet.google.com/">Meet</a></li>
-        </div>
-      </div>
-
-      <div class="category">
-        <div class="icon"><img src="icons/entertainment.svg" /></div>
-        <div class="bookmarks ent">
-          <li><a class="bm" href="https://www.hotstar.com/in">Hotstar</a></li>
-          <li><a class="bm" href="https://www.netflix.com/browse">Netflix</a></li>
-          <li><a class="bm" href="https://zoro.to/home/">Zoro</a></li>
-          <li><a class="bm" href="https://comick.fun/">Comick</a></li>
-          <li><a class="bm" href="https://goku.to/home">Goku</a></li>
-        </div>
-      </div>
-
-      <div class="category">
-        <div class="icon"><img src="icons/user.svg" /></div>
-        <div class="bookmarks per">
-          <li><a class="bm" href="https://open.spotify.com/">Spotify</a></li>
-          <li><a class="bm" href="https://myanimelist.net/">MyAnimeList</a></li>
-          <li><a class="bm" href="https://www.amazon.in/">Amazon</a></li>
-          <li><a class="bm" href="https://www.flipkart.com/">Flipkart</a></li>
-          <li><a class="bm" href="https://gojo8.com/reaction/">Patreon</a></li>
-        </div>
-      </div>
-
-      <div class="category">
-        <div class="icon"><img src="icons/art.svg" /></div>
-        <div class="bookmarks art">
-          <li><a class="bm" href="https://www.canva.com/">Canva</a></li>
-          <li><a class="bm" href="https://www.photopea.com/">Photopea</a></li>
-          <li><a class="bm" href="https://imgur.com/">Imgur</a></li>
-          <li><a class="bm" href="https://tinywow.com/">Tinywow</a></li>
-          <li><a class="bm" href="https://in.pinterest.com/">Pinterest</a></li>
-        </div>
-      </div>
-
+        
+        
+        <section class="svenska">
+          <h3>svenska</h3>
+          <ul id="svenska">
+            <li><a href="https://www.svt.se/">SVT</a></li>
+            <li><a href="https://8sidor.se/">8sidor</a></li>
+            <li><a href="https://www.svtplay.se/">SVTplay</a></li>
+            <li><a href="https://www.aftonbladet.se/">aftonbladet</a></li>
+            <li><a href="https://www.gp.se/">GP</a></li>            
+            <li><a href="https://sydsvenskan.minibladet.se">minibladet</a></li>
+          </ul>
+        </section>
+        <section class="OSCE">
+          <h3>OSCE</h3>
+          <ul id="OSCE">
+            <li><a href="https://www.hypocampus.se/home/#/books">hypoca</a></li>
+            <li><a href="https://www.internetmedicin.se/">internetmed</a></li>
+            <li><a href="https://kunskapsprovet.com/courses/">kunskapspr</a></li>
+            <li><a href="https://www.praktiskmedicin.se/">praktiskmed</a></li>
+            <li><a href="https://www.umu.se/en/library/">umu</a></li>
+            <li><a href="https://lakartidningen.se/">lakartid</a></li>
+          </ul>
+        </section>
+        <section class="research">
+          <h3>research</h3>
+          <ul>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/">pubmed</a></li>
+            <li><a href="https://scholar.google.com/">GS</a><li>
+            <li><a href="https://sci-hub.se/">sci-hub</a><li>
+            <li><a href="https://libgen.rocks/">libgen</a><li>
+            <li><a href="https://www.scinapse.io/">scinapse</a><li>
+            <li><a href="https://www.lens.org/">lens</a><li>
+            <li><a href="https://www.scienceopen.com/">scienceopen</a><li>
+             <li><a href="https://www.semanticscholar.org/">semanticscholar</a><li>
+          </ul>
+        </section>
+        <section class="dev">
+          <h3>dev</h3>
+          <ul>
+            <li><a href="https://www.github.com">github</a></li>
+            <li><a href="https://stackexchange.com/?_=996769874">stackexchange</a></li>
+              <li><a href="https://stackoverflow.com/">stackoverflow</a></li>
+            <li><a href="https://www.w3schools.com/">w3schools</a></li>
+          </ul>
+        </section>
+        <section class="general">
+          <h3>general</h3>
+          <ul>
+            <li><a href="http://www.reddit.com/">reddit</a></li>
+            <li><a href="https://www.youtube.com">youtube</a></li>
+            <li><a href="https://web.whatsapp.com/">whatsapp</a></li>
+          </ul>
+        </section>
+        
+      </section>
+      <footer>
+      </footer>
     </div>
-  </div>
-  <script src="script.js"></script>
-  <script src="suggestions.js "></script>
-</body>
+    <script>
+      function ordinal_suffix_of(i) {
+        var j = i % 10,
+            k = i % 100;
+        if (j == 1 && k != 11) {
+            return i + "st";
+        }
+        if (j == 2 && k != 12) {
+            return i + "nd";
+        }
+        if (j == 3 && k != 13) {
+            return i + "rd";
+        }
+        return i + "th";
+      }
 
+      class Clock {
+        constructor() {
+          this._clockEl = document.getElementById('js-clock');
+          this._dateEl = document.getElementById('js-date');
+          this._setTime = this._setTime.bind(this);
+          this._start();
+        }
+        _pad(num) {
+          return (`0${num.toString()}`).slice(-2);
+        }
+        _setTime() {
+          const date = new Date();
+          const hours = this._pad(date.getHours());
+          const minutes = this._pad(date.getMinutes());
+          this._clockEl.innerHTML = `${hours} : ${minutes}`;
+
+          const year = date.getFullYear();
+          const month = this._pad(date.getMonth());
+          const day = date.getDate();
+
+          var weekdays = new Array(7);
+          weekdays[0] = "Sunday";
+          weekdays[1] = "Monday";
+          weekdays[2] = "Tuesday";
+          weekdays[3] = "Wednesday";
+          weekdays[4] = "Thursday";
+          weekdays[5] = "Friday";
+          weekdays[6] = "Saturday";
+
+          var months = new Array(12);
+          months['00'] = "January";
+          months['01'] = "February";
+          months['02'] = "March";
+          months['03'] = "April";
+          months['04'] = "May";
+          months['05'] = "June";
+          months['06'] = "July";
+          months['07'] = "August";
+          months['08'] = "September";
+          months['09'] = "October";
+          months['10'] = "November";
+          months['11'] = "December";
+
+          var weekday   = weekdays[date.getDay()];
+          var fullMonth = months[month];
+
+          this._dateEl.innerHTML = weekday + ', ' + fullMonth + ' ' + ordinal_suffix_of(day) + ' ' + year;
+        }
+        _start() {
+          this._setTime();
+          setInterval(this._setTime, 3000);
+        }
+      }
+      const clock = new Clock();
+    </script>
+
+  </body>
+    <script src="script.js"></script>
+  <script src="suggestions.js "></script>
 </html>
