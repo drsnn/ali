@@ -1,0 +1,84 @@
+:root {
+    --bg: #212121;
+    --fg: white;
+    --secFg: #909090;
+    --secBg: rgba(255,255,255,0.15);
+    --bdradius: 25px;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: sans-serif, monospace, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+}
+
+#search {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+#searchbar {
+    border: 0;
+    border-radius: var(--bdradius);
+    display: flex;
+    background-color: var(--secBg);
+    height: 50px;
+    padding: 2px;
+    padding-left: 20px;
+}
+
+#icon {
+    width: 30px;
+    margin-right: 8px;
+}
+
+#searchInput {
+    width: 100%;
+    flex-grow: 2;
+    border: none;
+    background-color: transparent;
+    font-size: 1.1em;
+    color: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+#searchSubmit {
+    border: none;
+    background-color: transparent;
+    color: gray;
+    padding-right: 10px;
+}
+
+#suggestions {
+    background-color: var(--secBg);
+    width: 100%;
+    position: absolute;
+    display: none;
+    color: var(--secFg);
+    z-index: 1;
+    text-align: left;
+    border-radius: 0 0 var(--bdradius) var(--bdradius);
+    padding-bottom: 15px;
+}
+
+#suggestions hr {
+    margin: 0;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+#suggestions p {
+    padding-left: 60px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 10px 10px 60px;
+}
+
+#suggestions p:hover {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
