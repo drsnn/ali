@@ -1,0 +1,166 @@
+/****************
+GENERAL
+****************/
+
+html {
+    font-size: 23px;
+    background: url("../img/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    margin: 100px auto;
+    margin-bottom: 70px;
+}
+
+body {
+    color: #F0EEE3;
+}
+
+body a, body a:visited {
+    color: #4C566A;
+}
+
+body a:hover {
+    color: #8FBCBB;
+}
+
+.main ul {
+    background-color: #F0EEE3;
+}
+
+
+/****************
+TIME & DATE
+****************/
+
+time {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 4.2em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.date {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+/****************
+LISTS
+****************/
+
+.main h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.main a {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.main ul {
+    margin: 0;
+    padding: .125em 0;
+    text-align: center;
+    list-style: none;
+}
+
+.main section {
+    display: inline-block;
+    float: left;
+    margin: 20px 15%;
+    width: 70%;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main .search {
+    width: 100%;
+}
+
+.svenska h3 {
+    background-color: #8A2BE2;
+}
+
+.svenska a:hover {
+    color: #8A2BE2;
+}
+
+.OSCE h3 {
+    background-color: #81A1C1;
+}
+
+.OSCE a:hover {
+    color: #81A1C1;
+}
+
+.research h3 {
+    background-color: #8FBCBB;
+}
+
+.research a:hover {
+    color: #8FBCBB;
+}
+
+.dev h3 {
+    background-color: #A3BE8C;
+}
+
+.dev a:hover {
+    color: #A3BE8C;
+}
+
+.general h3 {
+    background-color: #D08770;
+}
+
+.general a:hover {
+    color: #D08770;
+}
+
+
+/****************
+SEARCH
+****************/
+
+#search {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+#searchbar {
+    border: 0;
+    border-radius: var(--bdradius);
+    display: flex;
+    background-color: var(--secBg);
+    height: 50px;
+    padding: 2px;
+    padding-left: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    flex-grow: 2;
+    border: none;
+    background-color: transparent;
+    font-size: 1.1em;
+    color: inherit;
+}
+
