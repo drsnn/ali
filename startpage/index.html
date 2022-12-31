@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" , user-scalable=no">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="clock-greeting">
+      <h1>Hello Sourajyoti</h1>
+      <br>
+      <h2 id="time-greeting"></h2>
+      <h2 id="clock"></h2>
+    </div>
+    <div class="weather">
+      <div id="description"></div>
+      <h1 id="temp"></h1>
+      <div id="location"></div>
+    </div>
+    <div class="weathericon"><img src="" width="104px" height="104px" id="wicon"></div>
+  </header>
+  <div class="container">
+    <div class="head">
+      <div class="logo"><img src="icons/fox.svg" /></div>
+      <div class="search-bar">
+        <div class="dropdown">
+          <button class="dropbtn"><img id="selectIcon"  onclick="showDropdown()" src=""></button>
+          <div id="myDropdown" class="dropdown-content">
+              <div class="option" onclick="changeSearchEngine(Brave)"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/brave_logo_icon_167780.png"></div>
+              <div class="option" onclick="changeSearchEngine(DuckDuckGo)"><img src="https://cdn3.iconfinder.com/data/icons/social-media-special/256/duckduckgo-512.png"></div>
+              <div class="option" onclick="changeSearchEngine(Google)"><img src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-512.png"></div>
+              <div class="option" onclick="changeSearchEngine(YouTube)"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png"></div>
+          </div>
+        </div> 
+        <form id="searchinput" action="" autocomplete="off" oninput="suggest()">
+          <input type="text" id="web-search" placeholder="">
+        </form>
+        <button id="search-button"><img src="icons/search.svg" style="cursor:pointer" /></button>
+        <div id="suggestions"></div>
+      </div>
+    </div>
+
+    <div class="bookmark">
+      <div class="category">
+        <div class="icon"><img src="icons/code.svg" /></div>
+        <div class="bookmarks cod">
+          <li><a class="bm" href="https://www.hackerrank.com/dashboard">Hackerrank</a></li>
+          <li><a class="bm" href="https://leetcode.com/problemset/algorithms/">LeetCode</a></li>
+          <li><a class="bm" href="https://stackoverflow.com/">Stackoverflow</a></li>
+          <li><a class="bm" href="https://www.onlinegdb.com/">OnlineGDB</a></li>
+          <li><a class="bm" href="https://github.com/sourajyotii">Github</a></li>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon"><img src="icons/gcat.svg" /></div>
+        <div class="bookmarks gog">
+          <li><a class="bm" href="https://www.youtube.com/">Youtube</a></li>
+          <li><a class="bm" href="https://mail.google.com/mail/u/0/#inbox">Mail</a></li>
+          <li><a class="bm" href="https://drive.google.com/drive/u/0/my-drive">Drive</a></li>
+          <li><a class="bm" href="https://classroom.google.com/u/0/h">Classroom</a></li>
+          <li><a class="bm" href="https://meet.google.com/">Meet</a></li>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon"><img src="icons/entertainment.svg" /></div>
+        <div class="bookmarks ent">
+          <li><a class="bm" href="https://www.hotstar.com/in">Hotstar</a></li>
+          <li><a class="bm" href="https://www.netflix.com/browse">Netflix</a></li>
+          <li><a class="bm" href="https://zoro.to/home/">Zoro</a></li>
+          <li><a class="bm" href="https://comick.fun/">Comick</a></li>
+          <li><a class="bm" href="https://goku.to/home">Goku</a></li>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon"><img src="icons/user.svg" /></div>
+        <div class="bookmarks per">
+          <li><a class="bm" href="https://open.spotify.com/">Spotify</a></li>
+          <li><a class="bm" href="https://myanimelist.net/">MyAnimeList</a></li>
+          <li><a class="bm" href="https://www.amazon.in/">Amazon</a></li>
+          <li><a class="bm" href="https://www.flipkart.com/">Flipkart</a></li>
+          <li><a class="bm" href="https://gojo8.com/reaction/">Patreon</a></li>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon"><img src="icons/art.svg" /></div>
+        <div class="bookmarks art">
+          <li><a class="bm" href="https://www.canva.com/">Canva</a></li>
+          <li><a class="bm" href="https://www.photopea.com/">Photopea</a></li>
+          <li><a class="bm" href="https://imgur.com/">Imgur</a></li>
+          <li><a class="bm" href="https://tinywow.com/">Tinywow</a></li>
+          <li><a class="bm" href="https://in.pinterest.com/">Pinterest</a></li>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="suggestions.js "></script>
+</body>
+
+</html>
